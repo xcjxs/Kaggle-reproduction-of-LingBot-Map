@@ -1,11 +1,3 @@
-
-
-https://github.com/user-attachments/assets/eb026c40-51e1-47bb-b0c1-bc6235a54679
-
-
-
-
-
 # Kaggle-reproduction-of-LingBot-Map
 
 
