@@ -57,53 +57,79 @@ subprocess.run("./code tunnel --accept-server-license-terms", shell=True)
 apt-get install -y ffmpeg libsm6 libxext6
 ```
 
-
+```python
 pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
+```
 
-
+```python
 pip install onnxruntime-gpu
+```
+
+
+
+```python
 pip install --index-url https://pypi.org/simple flashinfer-python#可以不安装，因为t4可能不支持，会出现报错
+```
 
 
 #克隆项目代码
 
-
+```python
 git clone https://github.com/Robbyant/lingbot-map.git
+```
+
+```python
+pip install --index-url https://pypi.org/simple flashinfer-python#可以不安装，因为t4可能不支持，会出现报错
+```
+
+
 
 #进入lingbot-map目录
 
-
+```python
 cd lingbot-map
+```
 
 
+#创建checkpoints并下载权重文件
+
+```python
 from kaggle_secrets import UserSecretsClient
 import subprocess
 user_secrets = UserSecretsClient()
-mkdir checkpoints用来存放模型权重
-#下载权重
+mkdir checkpoints
 wget -O checkpoints/lingbot-map.pt https://huggingface.co/robbyant/lingbot-map/resolve/main/lingbot-map.pt
-
-
-
-mkdir video用来存放你的视频
-
-
-
-pip install -e ".[vis]”安装可视化依赖
+```
 
 
 
 
+#用来存放你的视频
+```python
+mkdir video
+```
+
+#安装可视化依赖
+
+```python
+pip install -e ".[vis]”
+```
 
 运行推理脚本
 
+```python
 python demo.py \
     --model_path path/to/your.pt \
     --video_path path/to/your video \
     --use_sdpa
+```
 
 
 
+
+```python
+wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+```
 
 成功执行完后应该会有网址，但是这个网址由于kaggle的限制是打不开的
 
@@ -112,15 +138,24 @@ python demo.py \
 
 进入lingbot-map目录
 
+```python
 wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+```
 
 #添加权限
 
+```python
 chmod +x cloudflared-linux-amd64
+```
 
 
+
+#执行后会输出很多INFO
+
+```python
 ./cloudflared-linux-amd64 tunnel --url http://localhost:8080 --protocol http2
-执行后会输出很多INFO
+```
+
 
 
 选择https：//charitable-cable-cables-patents-openings.trycloudflore.com（具体域名会有区别）
