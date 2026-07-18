@@ -135,6 +135,12 @@ wget -O checkpoints/lingbot-map.pt https://huggingface.co/robbyant/lingbot-map/r
 mkdir video
 ```
 
+#安装lingbot-map相关组件
+```python
+pip install -e .
+```
+
+
 #安装可视化依赖
 
 ```python
