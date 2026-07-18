@@ -158,11 +158,6 @@ python demo.py \
 
 
 
-
-```python
-wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
-```
-
 成功执行完后应该会有网址，但是这个网址由于kaggle的限制是打不开的
 
 需要点击加号再开一个bash终端
