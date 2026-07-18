@@ -144,7 +144,7 @@ pip install -e .
 #安装可视化依赖
 
 ```python
-pip install -e ".[vis]”
+pip install -e ".[vis]"
 ```
 
 运行推理脚本
