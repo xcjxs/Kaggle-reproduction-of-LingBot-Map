@@ -108,10 +108,6 @@ pip install --index-url https://pypi.org/simple flashinfer-python#可以不安�
 git clone https://github.com/Robbyant/lingbot-map.git
 ```
 
-```python
-pip install --index-url https://pypi.org/simple flashinfer-python#可以不安装，因为t4可能不支持，会出现报错
-```
-
 
 
 #进入lingbot-map目录
