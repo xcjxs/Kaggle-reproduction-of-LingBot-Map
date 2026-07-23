@@ -193,9 +193,7 @@ chmod +x cloudflared-linux-amd64
 
 
 
-
-Attention！！！
-视频不要超过70s，否则会导致OOM！
+祝能享受到流式三维重建的乐趣！
 
 
 
